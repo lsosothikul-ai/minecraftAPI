@@ -1,7 +1,9 @@
 async function getAPI(){
     try{
-
-        const mob = document.getElementById("mob")
+        const directorOrMovie = document.getElementById("searchFor")
+        console.log(directorOrMovie)
+        if(directorOrMovie === "movie"){
+            const mob = document.getElementById("mob")
         let movieElement = ""
         const url = "https://ghibliapi.vercel.app/films/" + movieElement;
         headers = new Headers()
@@ -10,6 +12,7 @@ async function getAPI(){
         const json = await response.json();
         let movie = document.getElementById("movie")
         let title = ""
+        let directorText =  document.getElementById("director")
         let director = ""
         let desc = document.getElementById("description")
             const image = document.getElementById("img");
@@ -22,13 +25,16 @@ async function getAPI(){
                 director = json[films].director;
                 console.log(title)
                 console.log(director)
-                movie.textContent = title + " by " + director
+                movie.textContent = title 
+                directorText.textContent = "By " + director
                 desc.textContent = json[films].description  
                 image.src = json[films].image
                 console.log(image)
 
             }
         }
+        }
+        
     }
           
         

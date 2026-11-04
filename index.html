@@ -3,30 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href = "minecraft.css">
     <title>Document</title>
 </head>
 <body>
-<style>
-    body {
-background-image: url("logo.png");
-background-repeat: no-repeat;
-background-size: 500px 1000px;
-    }
-    
-
-</style>
     <div class ="mobs_div" >
-        
-
-<input type = "text" placeholder="type in any studio ghibli movie (be specific about capitalization)" id = "mob" style = "width:372px">
+    <div class="title">
+        <head> Studio Ghibli API</head>
+        <img src = logo.png style = "width:40px; height:50px">
+    </div>
+    <div class="button">
+          <label> choose what you would like to search for:</label>
+  <select name="searchFor" id="searchFor">
+    <option value="movie">movie</option>
+    <option value="director">director</option>
+  </select>
+    <input type = "text" placeholder="type in any studio ghibli movie (be specific about capitalization)" id = "mob" style = "width:372px">
+    <div class = "actualButton">
     <button onclick = "getAPI()"> submit</button>
-    <div class = "writing" style = "width: 500px">
-<h1 id = movie></h1>
-    <h2 id = description></h2>
     </div>
     
-    <div class = "imageClass" style = "width: 480px; height: 270px;">
-    <img id = "img">
+    </div>
+
+    <div class="master">
+        <div class = "writing">
+        <h1 id = movie></h1>
+        <h2 id = director></h2>
+        <h3 id = description></h3>
+        </div> 
+        <div class = "image">
+            <img id = "img">
+        </div>
+    </div>
+   
+    
     </div>
     
     </div>

@@ -1,8 +1,6 @@
 async function getAPI(){
     try{
-        const directorOrMovie = document.getElementById("searchFor")
-        console.log(directorOrMovie)
-        if(directorOrMovie === "movie"){
+
             const mob = document.getElementById("mob")
         let movieElement = ""
         const url = "https://ghibliapi.vercel.app/films/" + movieElement;
@@ -33,7 +31,7 @@ async function getAPI(){
 
             }
         }
-        }
+        
         
     }
           

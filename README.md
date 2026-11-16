@@ -1,2 +1,2 @@
 # minecraftAPI
-It is a Studio Ghibli API fetcher that has access to almost every Studio Ghibli movie and provides the director's name, a description, and a photo. Here are 3 examples: Howl's Moving Castle, Spirited Away, and My Neighbor Totoro
+It is a Studio Ghibli API fetcher that has access to almost every Studio Ghibli movie and provides the director's name, a description, and a photo. Here are 3 examples: Howl's Moving Castle, Spirited Away, and My Neighbor Totoro. Please ignore anywhere it says mc api I changed the project last minute. 
